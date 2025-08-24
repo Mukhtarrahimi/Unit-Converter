@@ -19,3 +19,14 @@ WEIGHT_FACTORS = {
     "oz": 0.028349523125,  # ounce
     "ton": 1000.0,  # metric ton
 }
+
+VOLUME_FACTORS = {
+    "l": 1.0,  # liter
+    "ml": 0.001,
+    "m3": 1000.0,  # cubic meter
+    "cm3": 0.001,  # cubic centimeter == milliliter
+    "cup": 0.2365882365,  # US cup
+    "pt": 0.473176473,  # pint
+    "qt": 0.946352946,  # quart
+    "gal": 3.785411784,  # gallon (US)
+}
