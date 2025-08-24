@@ -30,3 +30,10 @@ VOLUME_FACTORS = {
     "qt": 0.946352946,  # quart
     "gal": 3.785411784,  # gallon (US)
 }
+
+SPEED_FACTORS = {
+    "m/s": 1.0,
+    "km/h": 1000.0 / 3600.0,  # 0.277777...
+    "mph": 0.44704,  # miles per hour
+    "knot": 0.5144444444444445,
+}
