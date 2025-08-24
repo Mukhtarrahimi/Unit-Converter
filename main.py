@@ -10,3 +10,12 @@ LENGTH_FACTORS = {
     "ft": 0.3048,  # foot
     "in": 0.0254,  # inch
 }
+
+WEIGHT_FACTORS = {
+    "kg": 1.0,
+    "g": 0.001,
+    "mg": 1e-6,
+    "lb": 0.45359237,  # pound
+    "oz": 0.028349523125,  # ounce
+    "ton": 1000.0,  # metric ton
+}
