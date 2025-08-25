@@ -72,3 +72,17 @@ def convert_temperature(value: float, from_unit: str, to_unit: str) -> float:
     valid = {"C", "F", "K"}
     if from_u not in valid or to_u not in valid:
         raise ValueError("Invalid temperature unit.")
+
+    if from_u == "C":
+        c = value
+    elif from_u == "F":
+        c = (value - 32) * 5.0/9.0
+    elif from_u == "K":
+        c = value - 273.15
+
+    if to_u == "C":
+        return c
+    elif to_u == "F":
+        return c * 9.0/5.0 + 32
+    elif to_u == "K":
+        return c + 273.15
