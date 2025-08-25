@@ -54,3 +54,12 @@ CATEGORIES = {
     "speed": SPEED_FACTORS,
     "area": AREA_FACTORS,
 }
+
+
+def convert_linear(value: float, from_unit: str, to_unit: str, factors: dict) -> float:
+    
+    if from_unit not in factors or to_unit not in factors:
+        raise ValueError("Invalid unit for conversion.")
+    value_in_base = value * factors[from_unit] 
+    result = value_in_base / factors[to_unit]  
+    return result
