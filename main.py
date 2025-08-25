@@ -46,3 +46,11 @@ AREA_FACTORS = {
     "acre": 4046.8564224,
     "hectare": 10000.0,
 }
+
+CATEGORIES = {
+    "length": LENGTH_FACTORS,
+    "weight": WEIGHT_FACTORS,
+    "volume": VOLUME_FACTORS,
+    "speed": SPEED_FACTORS,
+    "area": AREA_FACTORS,
+}
