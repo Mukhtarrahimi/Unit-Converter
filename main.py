@@ -57,9 +57,18 @@ CATEGORIES = {
 
 
 def convert_linear(value: float, from_unit: str, to_unit: str, factors: dict) -> float:
-    
+
     if from_unit not in factors or to_unit not in factors:
         raise ValueError("Invalid unit for conversion.")
     value_in_base = value * factors[from_unit] 
     result = value_in_base / factors[to_unit]  
     return result
+
+
+def convert_temperature(value: float, from_unit: str, to_unit: str) -> float:
+  
+    from_u = from_unit.upper()
+    to_u = to_unit.upper()
+    valid = {"C", "F", "K"}
+    if from_u not in valid or to_u not in valid:
+        raise ValueError("Invalid temperature unit.")
