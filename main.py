@@ -37,3 +37,12 @@ SPEED_FACTORS = {
     "mph": 0.44704,  # miles per hour
     "knot": 0.5144444444444445,
 }
+
+AREA_FACTORS = {
+    "m2": 1.0,
+    "km2": 1e6,
+    "cm2": 0.0001,
+    "mm2": 1e-6,
+    "acre": 4046.8564224,
+    "hectare": 10000.0,
+}
